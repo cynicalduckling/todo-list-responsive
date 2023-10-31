@@ -244,6 +244,7 @@ span {
 .day {
     margin: 0 1rem;
     font-size: 2.2rem;
+    transition: opacity 200ms linear;
 }
 
 .day:hover {
@@ -280,4 +281,10 @@ span {
     height: 50px;
     width: 50px;
     border-radius: 2.5rem;
+    transition: opacity 400ms linear;
+}
+
+.task-buttons:hover {
+    opacity: 0.6;
+    cursor: pointer;
 }
