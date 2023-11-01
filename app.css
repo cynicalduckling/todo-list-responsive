@@ -348,9 +348,6 @@ input[type="checkbox"]:checked {
 }
 
 @media only screen and (min-width: 768px) {
-    div {
-        color: red;
-    }
 
     .task-details-row {
         display: flex;
