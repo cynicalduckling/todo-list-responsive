@@ -239,7 +239,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
+
+/* .task-content-row {
+    max-width: 650px;
+} */
 
 .task-details-row:nth-of-type(2n-1) {
     margin-bottom: 0.6rem;
@@ -363,12 +368,6 @@ input[type="checkbox"]:checked {
 }
 
 @media only screen and (min-width: 768px) {
-
-    .task-details-row {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
 
     .task-content-row {
         justify-content: space-between;
