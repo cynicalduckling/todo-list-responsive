@@ -106,6 +106,10 @@ section {
 * {
     border: 10px solid black;
 } */
+html {
+    font-size: 18px;
+}
+
 
 body {
     line-height: 1;
