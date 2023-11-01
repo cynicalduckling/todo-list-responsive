@@ -230,7 +230,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 90%;
-    max-width: 10%%;
     height: 50px;
     transition: all 200ms linear;
     margin-bottom: 1.2rem;
@@ -246,13 +245,16 @@ body {
     margin-bottom: 0.6rem;
 }
 
+
 .task-checkbox {
     width: 10%;
 }
 
 .task-name-input {
+    font-weight: bold;
+    font-size: 1rem;
     margin: 0;
-    width: 90%;
+    width: 100%;
     background-color: transparent;
     border: none;
 }
@@ -347,10 +349,17 @@ input[type="checkbox"]:checked {
     cursor: pointer;
 }
 
-#add-icon,
-#delete-icon {
+#add-icon {
     color: white;
     font-size: 30px;
+}
+
+#delete-icon {
+    color: grey;
+}
+
+#delete-icon:hover {
+    color: black;
 }
 
 @media only screen and (min-width: 768px) {
