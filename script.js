@@ -11,7 +11,7 @@ createTask = () => {
     taskHTML = `<div id="task-${taskCounter}" class="task-container">
         <div class="task-details-row">
             <input type="checkbox" id="task-${taskCounter}-checkbox" class="task-checkbox task-content" />
-            <input type="text" placeholder="Task name" id="task-${taskCounter}-task"
+            <input type="text" placeholder="Enter task" id="task-${taskCounter}-task"
                 class="task-name-input task-content">
         </div>
         <div class="task-content-row task-details-row">

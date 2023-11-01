@@ -251,7 +251,6 @@ body {
     width: 90%;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid lightgray;
 }
 
 input[type="checkbox"] {
@@ -434,6 +433,13 @@ input[type="checkbox"]:checked {
 
     .content {
         border-radius: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 90vw;
+        height: 90vh;
     }
 }
 
