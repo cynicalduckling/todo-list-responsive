@@ -240,9 +240,6 @@ body {
     width: 100%;
 }
 
-/* .task-content-row {
-    max-width: 650px;
-} */
 
 .task-details-row:nth-of-type(2n-1) {
     margin-bottom: 0.6rem;
@@ -260,6 +257,10 @@ body {
     width: 100%;
     background-color: transparent;
     border: none;
+}
+
+.delete-icons:hover {
+    cursor: pointer;
 }
 
 input[type="checkbox"] {
