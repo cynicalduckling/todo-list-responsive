@@ -216,10 +216,8 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
-    margin: auto;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
 }
 
 .task-container {
@@ -229,7 +227,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 90%;
+    align-items: stretch;
     height: 50px;
     transition: all 200ms linear;
     margin-bottom: 1.2rem;
@@ -369,10 +367,13 @@ input[type="checkbox"]:checked {
 
 @media only screen and (min-width: 768px) {
 
-    .task-content-row {
-        justify-content: space-between;
+    .tasks-container {
+        align-items: center;
     }
 
+    .task-container {
+        min-width: 550px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -430,10 +431,28 @@ input[type="checkbox"]:checked {
 
     .task-container {
         align-items: flex-start;
+        min-width: 90%;
     }
 
     .tasks-container {
+        margin-top: 1rem;
         align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width: 992px) and (max-height: 700px) {
+    .sidebar-container {
+        padding-top: 0;
+        padding-bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .category-container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 70%;
     }
 }
 
@@ -455,7 +474,12 @@ input[type="checkbox"]:checked {
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
+
+    .task-container {
+        min-width: 620px;
+    }
+
     .container {
         width: 75vw;
         height: 80vh;
