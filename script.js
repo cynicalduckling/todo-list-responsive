@@ -42,7 +42,7 @@ const deleteTask = e => {
 const setDefaultDate = () => {
     for (let date of document.querySelectorAll("input[type='date']")) {
         if (!date.value.length) {
-            date.defaultValue = new Date().toLocaleDateString('en-CA')
+            date.value = new Date().toLocaleDateString('en-CA')
         }
     }
 }
@@ -106,6 +106,8 @@ const loadTasks = () => {
 }
 
 loadTasks()
+setDefaultDate()
+
 
 const updateTasks = () => {
     tasks = document.querySelectorAll(".task-container")
@@ -125,9 +127,8 @@ const updateTasks = () => {
 }
 
 let createTask = () => {
-    setDefaultDate()
-    renderTasks(updateTasks())
     tasksContainer.appendChild(taskContainer.cloneNode(true))
+    renderTasks(updateTasks())
     setDefaultDate()
 }
 
