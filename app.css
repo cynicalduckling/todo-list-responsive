@@ -233,6 +233,8 @@ body {
     margin-bottom: 1.2rem;
 }
 
+
+
 .task-details-row {
     display: flex;
     justify-content: space-between;
@@ -261,21 +263,6 @@ body {
 
 .delete-icons:hover {
     cursor: pointer;
-}
-
-input[type="checkbox"] {
-    appearance: none;
-    margin: none;
-    border: 1px solid grey;
-    height: 14px;
-    width: 14px;
-    border-radius: 4px;
-    background-color: transparent;
-    margin: 0;
-}
-
-input[type="checkbox"]:checked {
-    background-color: gray;
 }
 
 .task-content {
@@ -351,6 +338,10 @@ input[type="checkbox"]:checked {
 .task-buttons:hover {
     opacity: 0.6;
     cursor: pointer;
+}
+
+.task-category {
+    border: none;
 }
 
 #add-icon {
